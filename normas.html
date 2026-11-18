@@ -262,7 +262,7 @@ footer a{color:#CFC6B4}
 <script>
 /* Visitas sin cookies (GoatCounter). Guarda el código de ?s= solo en esta pestaña y lo quita de la barra de direcciones. */
 (function(){
-  var GC = ''; // p. ej. 'https://NOMBRE.goatcounter.com/count'
+  var GC = 'https://inigo.goatcounter.com/count';
   var q = new URLSearchParams(location.search), r = q.get('s');
   try { if (r) sessionStorage.setItem('s', r); else r = sessionStorage.getItem('s'); } catch (e) {}
   if (q.has('s') && history.replaceState) { q.delete('s'); var qs = q.toString(); history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash); }
