@@ -259,5 +259,23 @@ footer a{color:#CFC6B4}
   </div>
 </footer>
 
+<script>
+/* Visitas sin cookies (GoatCounter). Guarda el código de ?s= solo en esta pestaña y lo quita de la barra de direcciones. */
+(function(){
+  var GC = ''; // p. ej. 'https://NOMBRE.goatcounter.com/count'
+  var q = new URLSearchParams(location.search), r = q.get('s');
+  try { if (r) sessionStorage.setItem('s', r); else r = sessionStorage.getItem('s'); } catch (e) {}
+  if (q.has('s') && history.replaceState) { q.delete('s'); var qs = q.toString(); history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash); }
+  if (!GC) return;
+  window.goatcounter = { no_onload: true };
+  var s = document.createElement('script');
+  s.async = true; s.src = 'https://gc.zgo.at/count.js'; s.setAttribute('data-goatcounter', GC);
+  s.onload = function () {
+    var page = location.pathname.split('/').pop() || 'index.html';
+    window.goatcounter.count({ path: '/' + (r || 'directo') + '/' + page, title: document.title });
+  };
+  document.head.appendChild(s);
+})();
+</script>
 </body>
 </html>
