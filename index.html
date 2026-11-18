@@ -88,6 +88,12 @@ details{border-bottom:1px solid var(--linea);padding-block:14px}
 details summary{cursor:pointer;font-weight:600;list-style-position:outside}
 details p{margin-top:8px;color:var(--suave);max-width:70ch}
 
+/* Equipo */
+.equipo{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.persona{background:var(--papel);border:2px solid var(--tinta);padding:20px;display:flex;flex-direction:column;gap:4px}
+.persona b{font-family:var(--display);font-weight:400;font-size:1.4rem;color:var(--pinar)}
+.persona span{color:var(--suave);font-size:.95rem}
+
 /* Contacto */
 .contacto{background:var(--pinar);color:var(--carton);padding-block:64px}
 .contacto h2{color:var(--senal)}
@@ -109,6 +115,7 @@ footer a{color:#CFC6B4}
       <a href="#pueblo">Para el pueblo</a>
       <a href="#reparto">Quién pone qué</a>
       <a href="#seguridad">Seguridad</a>
+      <a href="#quienes-somos">Quiénes somos</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
@@ -229,7 +236,6 @@ footer a{color:#CFC6B4}
     </div>
     <ol class="cal">
       <li><span class="f">Noviembre y diciembre de 2026</span> · Reuniones con ayuntamientos y elección del pueblo anfitrión. Firma del acuerdo.</li>
-      <li><span class="f">Diciembre de 2026</span> · Prueba piloto con unas pocas parejas para probar las rutas y la central de ayuda.</li>
       <li><span class="f">Enero de 2027</span> · Presentación conjunta en prensa y apertura de la venta.</li>
       <li><span class="f">Febrero y marzo</span> · Contratación de proveedores, dando prioridad a los del pueblo y la comarca.</li>
       <li><span class="f">Abril y mayo</span> · Solicitud de permisos y plan de autoprotección. Decisión final de seguir adelante según las entradas vendidas.</li>
@@ -251,6 +257,22 @@ footer a{color:#CFC6B4}
     <details><summary>¿Qué pasa con el ruido, la basura y los vecinos?</summary><p>Al estar el recinto fuera del pueblo, el ruido queda lejos de las casas. Los horarios de música y de barra se pactan con el ayuntamiento, y el recinto y la acampada se limpian al terminar. Cómo participan los vecinos y las asociaciones del pueblo lo acordamos con el ayuntamiento.</p></details>
     <details><summary>¿Compite con los bares del pueblo?</summary><p>No queremos que sea así. Los participantes llegan al pueblo durante la tarde, antes de la fiesta, y ahí es donde consumen. Además, proponemos que los bares y productores locales tengan prioridad en los puestos de comida y bebida del recinto.</p></details>
     <details><summary>¿Hay que comprometerse a varios años?</summary><p>No. Empezamos con una edición. Si sale bien para el pueblo y para nosotros, repetir destino permite mejorar cada año y que el pueblo se haga conocido por este evento.</p></details>
+  </div>
+</section>
+
+<section class="block" id="quienes-somos">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow">Quiénes somos</p>
+      <h2>Ya lo hemos hecho en Francia.</h2>
+      <p>Somos un grupo con experiencia en la organización de eventos. Parte del equipo forma parte de la organización de Mad Jacques, la carrera de autostop que se celebra cada año en Francia. Ahora queremos traer la idea a España, con lo aprendido allí. Venimos de Bilbao, Valencia y París.</p>
+    </div>
+    <div class="equipo">
+      <div class="persona"><b>Iñigo</b></div>
+      <div class="persona"><b>Mara</b></div>
+      <div class="persona"><b>Diego</b></div>
+      <div class="persona"><b>Fannie</b></div>
+    </div>
   </div>
 </section>
 
